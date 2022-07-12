@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/intellisense/ROS/MSC/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_auto_docking/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_bumper2pc/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_controller_tutorial/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_keyop/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_node/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_random_walker/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/kobuki/kobuki_safety_controller/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_control/xavier_control/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_explore/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_planner/include/**",
+        "/home/intellisense/ROS/MSC/src/xavier_tests/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

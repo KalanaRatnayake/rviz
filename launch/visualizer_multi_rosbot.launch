@@ -1,0 +1,44 @@
+<launch>
+    <!-- include the rviz configration -->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find xavier_robot)/rviz/rosbots.rviz"/>
+
+    <!-- Start server cloud node -->
+    <node pkg="xavier_rviz" type="xavier_visualizer_node" name="cloud_visualizer" output="screen" >
+        <remap from="octomap_centers" to="server_centers" />
+    </node>
+
+    <group ns="rosbot1">
+        <!-- load parameters -->
+        <rosparam command="load" file="$(find xavier)/param/simu_rosbot.yaml"/>
+
+        <!-- Start cloud node -->
+        <node pkg="xavier_rviz" type="xavier_visualizer_node" name="cloud_visualizer" output="screen" />
+
+        <!-- Start grid node -->
+        <node pkg="xavier_rviz" type="grid_image_creator_node.py" name="grid_visualizer" output="screen" />
+    </group>
+
+    <group ns="rosbot2">
+
+        <!-- load parameters -->
+        <rosparam command="load" file="$(find xavier)/param/simu_rosbot.yaml"/>
+
+        <!-- Start cloud node -->
+        <node pkg="xavier_rviz" type="xavier_visualizer_node" name="cloud_visualizer" output="screen" />
+
+        <!-- Start grid node -->
+        <node pkg="xavier_rviz" type="grid_image_creator_node.py" name="grid_visualizer" output="screen" />
+    </group>
+
+    <group ns="rosbot3">
+
+        <!-- load parameters -->
+        <rosparam command="load" file="$(find xavier)/param/simu_rosbot.yaml"/>
+
+        <!-- Start cloud node -->
+        <node pkg="xavier_rviz" type="xavier_visualizer_node" name="cloud_visualizer" output="screen" />
+
+        <!-- Start grid node -->
+        <node pkg="xavier_rviz" type="grid_image_creator_node.py" name="grid_visualizer" output="screen" />
+    </group>
+</launch>
